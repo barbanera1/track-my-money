@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="StatTracker@andrewtestdbinstance.ck0o9xqggby0.us-east-1.rds.amazonaws.com">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="StatTracker">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="innodb"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="testdb"/>
+    <schema id="9" parent="1" name="tmp"/>
+    <table id="10" parent="2" name="cats"/>
+    <table id="11" parent="2" name="trax_tbl"/>
+    <table id="12" parent="2" name="users"/>
+    <column id="13" parent="10" name="category">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="14" parent="11" name="trax_num">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="11" name="date">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="16" parent="11" name="trax_amt">
+      <Position>3</Position>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="17" parent="11" name="cat">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="18" parent="11" name="msg">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="19" parent="11" name="user_num">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="20" parent="11" name="trax_type">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="21" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>trax_num</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="22" parent="12" name="username">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="12" name="email">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="24" parent="12" name="user_num">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="25" parent="12" name="password">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="26" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>username</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
