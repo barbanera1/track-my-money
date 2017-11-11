@@ -12,6 +12,11 @@ public class Controller {
 
     private Statement statement;
 
+    @RequestMapping("/hello")
+    public String Hello(){
+        return "Hello Friend!";
+    }
+
     @RequestMapping("/getRow0")
     public Transaction getRow0(){
 
